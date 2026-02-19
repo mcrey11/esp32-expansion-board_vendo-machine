@@ -1,27 +1,5 @@
-#,Component,Value/Model,Package,Qty,LCSC Part #,Unit Price (USD),Total Price (USD),Description,Notes
-1,ESP32 Module,ESP32-WROOM-32,SMD Module,1,C82899,$3.50,$3.50,Main microcontroller,32-bit dual-core processor with WiFi & Bluetooth
-2,Buck Converter,LM2596S-5.0,TO-263,1,C9865,$0.45,$0.45,12V → 5V regulator,3A output current
-3,Inductor,33µH,SMD 1210,1,C408412,$0.15,$0.15,For LM2596,Rated current 3A
-4,Schottky Diode,SS34 (3A 40V),DO-214AB,1,C8678,$0.08,$0.08,For buck converter,Low forward voltage drop
-5,Input Capacitor,220µF 25V,Electrolytic 8x12mm,1,C59339,$0.12,$0.12,Buck input filter,Low ESR type
-6,Output Capacitor,470µF 10V,Electrolytic 8x12mm,2,C134509,$0.10,$0.20,Buck output filter,Low ESR type
-7,Ceramic Capacitor,100nF 50V,0805,5,C49678,$0.01,$0.05,Decoupling caps,X7R dielectric
-8,Ceramic Capacitor,10µF 16V,0805,3,C15850,$0.03,$0.09,Power filtering,X7R dielectric
-9,Resistor,330Ω,0805,1,C17630,$0.01,$0.01,LED current limiting,1/8W 1% tolerance
-10,Resistor,4.7kΩ,0805,2,C17673,$0.01,$0.02,I2C pull-ups,1/8W 1% tolerance
-11,Resistor,10kΩ,0805,3,C17414,$0.01,$0.03,Pull-up/down resistors,1/8W 1% tolerance
-12,LED,Red 5mm,THT 5mm,1,C84256,$0.03,$0.03,Status indicator,Forward voltage 2V
-13,Relay,SRD-05VDC-SL-C,THT,1,C35449,$0.45,$0.45,5V SPDT relay,10A contact rating
-14,Transistor,2N2222A (NPN),TO-92,1,C143874,$0.05,$0.05,Relay driver,600mA collector current
-15,Diode,1N4007,DO-41,1,C106902,$0.02,$0.02,Relay flyback protection,1A 1000V rectifier
-16,Terminal Block,2-pin 5.08mm,Screw Terminal,4,C8465,$0.08,$0.32,Power/connections,16A rated
-17,Terminal Block,3-pin 5.08mm,Screw Terminal,1,C395880,$0.12,$0.12,Coin acceptor,16A rated
-18,JST Connector,XH-4P,2.54mm,1,C144394,$0.06,$0.06,I2C LCD connector,Right angle
-19,Voltage Regulator,AMS1117-3.3,SOT-223,1,C6186,$0.12,$0.12,5V → 3.3V for ESP32,1A output
-20,Capacitor,22µF 10V,0805,2,C15850,$0.03,$0.06,AMS1117 filtering,X7R dielectric
-21,Push Button,6x6x5mm,THT Tactile,2,C318884,$0.05,$0.10,BOOT + RESET,Through-hole tactile switch
-22,USB-C Connector,USB-C 16P,SMD,1,C165948,$0.25,$0.25,Programming/power,16-pin SMD type
-23,Fuse Holder,5x20mm,PCB Mount,1,C111544,$0.15,$0.15,Input protection,PCB mount type
-24,Fuse,2A Slow Blow,5x20mm,1,C70066,$0.08,$0.08,12V input protection,Slow blow type
-25,PCB,100x80mm,2-layer,1,N/A,$2.00,$2.00,Custom PCB,Green solder mask
-,,,,,TOTAL:,,$8.51,Estimated total component cost,Prices subject to change; bulk discounts available
+Component, Description
+PC817, Optocoupler for isolating the control signals
+MOSFET, For switching the DC load
+Resistor, Current limiting resistor for PC817
+
