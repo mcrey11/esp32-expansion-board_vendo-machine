@@ -1,43 +1,37 @@
-# Schematic Description
+# JuanFi DC Control Architecture Schematic Description
 
-## Block Diagram
-![Block Diagram](link-to-your-block-diagram-image)
+## Overview
+The JuanFi control architecture utilizes an isolated optocoupler and an IRLZ44N MOSFET for low-side switching of DC loads. This architecture replaces the traditional relay-based design, providing better isolation and faster switching times.
 
-## Power Supply Circuit Design
-The power supply circuit is designed to deliver stable voltage to the ESP32 and other peripherals. Below are the specifications:
-- Input Voltage: 5V DC
-- Output Voltage: 3.3V DC (for ESP32)
-- Current Rating: Minimum 500mA
+## Components
+- **Optocoupler**: PC817
+- **MOSFET**: IRLZ44N
+- **Microcontroller**: ESP32
+  - **GPIO D6**: Coin input
+  - **GPIO D7**: Control signal for the PC817
+- **Power Supply Sections**: Designed to handle the required load, optimizing performance and thermal efficiency.
+- **I2C LCD Interface**: Enables easy communication between the ESP32 and the LCD.
 
-## ESP32 Connections
-- **GPIOs**: Connected to various peripherals as described in the schematic.
-- **Power Supply**: V5 and GND from the power supply circuit.
-- **Programming Interface**: USB connection for flashing and debugging.
+## Circuit Description
+1. **Isolated Switching**: The isolation provided by the PC817 allows for safe switching of higher voltages by the MOSFET from the low-voltage ESP32.
+2. **Power Supply Design**: Ensures that the system operates within specified voltage and current limits, maintaining reliability.
+3. **GPIO Connections**: 
+   - GPIO D6 is used for detecting coin insertion, using an interrupt-driven approach to ensure fast response times.
+   - GPIO D7 sends a control signal to the optocoupler, which in turn switches the MOSFET.
+4. **I2C LCD Communication**: Allows for displaying status information of the control system, using only two wires for communication (SDA and SCL).
 
-## Relay Driver Circuit
-- Utilizes a transistor to drive the relay, allowing control of high voltage devices.
-- Specifications:
-  - Relay Voltage: 5V 
-  - Relay Rating: 10A at 250V AC / 30V DC
+## Circuit Calculations
+### Load Calculation
+- Determine the load requirements based on the application's specifications. Calculate the current and voltage requirements to select appropriate MOSFETs and provide adequate power supply sizing.
 
-## I2C Interface
-Used for connecting various I2C devices:
-- SDA: GPIO21
-- SCL: GPIO22
+### Power Budget Analysis
+- Analyze the total power consumption of the system to ensure the power supply can handle the maximum load.
+- Consider potential efficiency losses, especially in the switching components.
 
-## Coin Acceptor Input
-- Connected to GPIO for detecting coin input.
-- Supports various coin types.
+### Testing Points
+- Incorporate test points within the circuit for easy access to measure voltages and currents during development and troubleshooting.
 
-## USB Programming Interface
-- Standard USB to serial connection,
-- Used for uploading code and serial monitoring.
+## Conclusion
+The JuanFi DC control architecture provides an efficient, reliable, and safe method for DC motor control, leveraging modern components for enhanced functionality. 
 
-## Electrical Specifications for all Circuit Sections
-- **Power Supply Circuit**: As specified above.
-- **ESP32**: Operating Voltage: 3.3V, Maximum Current: 500mA.
-- **Relay Driver**: Maximum Control Voltage: 5V, Maximum Load: 10A.
-- **I2C Devices**: Typically 3.3V logic levels.
-- **Coin Acceptors**: Voltage: 5V DC, Current: 200mA (max).
-
-**Note**: Ensure to follow components' datasheets for accurate implementation of the designs.
+This design promotes a more streamlined, safer approach to operating DC loads, improving overall system performance.
