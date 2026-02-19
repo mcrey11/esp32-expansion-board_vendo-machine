@@ -7,8 +7,8 @@ The JuanFi control architecture utilizes an isolated optocoupler and an IRLZ44N 
 - **Optocoupler**: PC817
 - **MOSFET**: IRLZ44N
 - **Microcontroller**: ESP32
-  - **GPIO D6**: Coin input
-  - **GPIO D7**: Control signal for the PC817
+  - **GPIO P12**: Coin input
+  - **GPIO P13**: Control signal for the PC817
 - **Power Supply Sections**: Designed to handle the required load, optimizing performance and thermal efficiency.
 - **I2C LCD Interface**: Enables easy communication between the ESP32 and the LCD.
 
