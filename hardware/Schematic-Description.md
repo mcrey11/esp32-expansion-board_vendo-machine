@@ -16,8 +16,8 @@ The JuanFi control architecture utilizes an isolated optocoupler and an IRLZ44N 
 1. **Isolated Switching**: The isolation provided by the PC817 allows for safe switching of higher voltages by the MOSFET from the low-voltage ESP32.
 2. **Power Supply Design**: Ensures that the system operates within specified voltage and current limits, maintaining reliability.
 3. **GPIO Connections**: 
-   - GPIO D6 is used for detecting coin insertion, using an interrupt-driven approach to ensure fast response times.
-   - GPIO D7 sends a control signal to the optocoupler, which in turn switches the MOSFET.
+   - GPIO P12 is used for detecting coin insertion, using an interrupt-driven approach to ensure fast response times.
+   - GPIO P13 sends a control signal to the optocoupler, which in turn switches the MOSFET.
 4. **I2C LCD Communication**: Allows for displaying status information of the control system, using only two wires for communication (SDA and SCL).
 
 ## Circuit Calculations
