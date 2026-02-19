@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg">  <!-- SVG diagram content here -->  <text x="..." y="...">GPIO 13</text>  <text x="..." y="...">GPIO 12</text>  <!-- More updates as needed --></svg>
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='800' height='600'>
+  <rect width='100%' height='100%' fill='white'/>
+  <text x='10' y='20' font-family='Arial' font-size='16'>ESP32 Expansion Board with JuanFi DC Control Architecture</text>
+  <text x='10' y='50' font-family='Arial' font-size='14'>Connections:</text>
+  <text x='20' y='70' font-family='Arial' font-size='12'>- AC Mains</text>
+  <text x='20' y='90' font-family='Arial' font-size='12'>- 12V SMPS</text>
+  <text x='20' y='110' font-family='Arial' font-size='12'>- LM2596 Buck Converter</text>
+  <text x='20' y='130' font-family='Arial' font-size='12'>- ESP32 GPIO Assignments:</text>
+  <text x='30' y='150' font-family='Arial' font-size='12'>- GPIO12: Coin Input</text>
+  <text x='30' y='170' font-family='Arial' font-size='12'>- GPIO13: PC817 Control</text>
+  <text x='30' y='190' font-family='Arial' font-size='12'>- GPIO21/22: I2C</text>
+  <text x='30' y='210' font-family='Arial' font-size='12'>- GPIO2: LED</text>
+  <text x='20' y='230' font-family='Arial' font-size='12'>- Coin Acceptor</text>
+  <text x='20' y='250' font-family='Arial' font-size='12'>- PC817 Optocoupler (330 ohm resistor)</text>
+  <text x='20' y='270' font-family='Arial' font-size='12'>- IRLZ44N MOSFET (10k pull-up resistor)</text>
+  <text x='20' y='290' font-family='Arial' font-size='12'>- 12V DC Load</text>
+  <text x='20' y='310' font-family='Arial' font-size='12'>- Flyback Diode</text>
+  <text x='20' y='330' font-family='Arial' font-size='12'>- I2C LCD Display</text>
+  <text x='20' y='350' font-family='Arial' font-size='12'>- Status LED (330 ohm resistor)</text>
+  <text x='20' y='370' font-family='Arial' font-size='12'>- Common Ground Bus</text>
+  <text x='10' y='400' font-family='Arial' font-size='14'>Power Budget Notes:</text>
+  <text x='10' y='420' font-family='Arial' font-size='12'>- Total Power Budget: 12V * Current</text>
+  <text x='10' y='440' font-family='Arial' font-size='12'>- Component Notes: Specific ratings for all components used</text>
+  <text x='10' y='460' font-family='Arial' font-size='12'>- Pin Assignment Legend:</text>
+  <text x='10' y='480' font-family='Arial' font-size='12'>- GPIO12: Coin Input (Corrected)</text>
+  <text x='10' y='500' font-family='Arial' font-size='12'>- GPIO13: PC817 Control (Corrected)</text>
+  <text x='10' y='520' font-family='Arial' font-size='12'>- GPIO21/22: I2C</text>
+  <text x='10' y='540' font-family='Arial' font-size='12'>- GPIO2: LED</text>
+</svg>
