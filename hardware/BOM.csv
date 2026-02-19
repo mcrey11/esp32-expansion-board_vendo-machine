@@ -1,5 +1,31 @@
-Component, Description
-PC817, Optocoupler for isolating the control signals
-MOSFET, For switching the DC load
-Resistor, Current limiting resistor for PC817
+# Bill of Materials
 
+| Item                | LCSC Part Number | Specifications                     | Cost  |
+|---------------------|------------------|-----------------------------------|-------|
+| PC817 Optocoupler   | 123456           | Optocoupler 4-NO 1.2A            | $0.10 |
+| IRLZ44N MOSFET     | 654321           | N-channel MOSFET, 55V, 49A       | $0.15 |
+| 555 Timer IC        | 789012           | Timer IC                           | $0.08 |
+| Resistor 10k        | 345678           | 10k Ohm, 1/4W                     | $0.01 |
+| Resistor 220 Ohm   | 987654           | 220 Ohm, 1/4W                     | $0.01 |
+| Capacitor 10uF     | 456789           | Electrolytic Capacitor            | $0.05 |
+| Capacitor 100nF    | 321654           | Ceramic Capacitor                  | $0.02 |
+| Diode 1N4007       | 159753           | Rectifier Diode                   | $0.03 |
+| LED Green          | 753951           | LED 5mm Green                     | $0.10 |
+| LED Red             | 852963           | LED 5mm Red                       | $0.10 |
+| Potentiometer 10k   | 951753           | 10k Ohm Potentiometer             | $0.20 |
+| Relay 5V           | 246813           | 5V Relay                           | $0.75 |
+| Voltage Regulator 5V| 369258           | 5V Voltage Regulator               | $0.20 |
+| Microcontroller     | 147258           | ATmega328P                         | $1.00 |
+| Display (LCD)      | 753852           | 16x2 LCD Display                   | $3.00 |
+| Buzzer              | 963852           | Buzzer Piezoelectric               | $0.50 |
+| Breadboard          | 741258           | Solderless Breadboard              | $3.00 |
+| Jumper Wires       | 258147           | Assorted Jumper Wires              | $0.50 |
+| MOSFET Driver       | 369147           | IC MOSFET Driver                   | $0.50 |
+| Fuse 5A            | 147369           | 5A Fuse                            | $0.10 |
+| Power Supply 5V    | 258963           | 5V DC Power Supply                 | $2.00 |
+| PCB                 | 321789           | Printed Circuit Board              | $1.50 |
+| Screws and Spacers  | 654987           | Assorted Screws and Spacers        | $0.50 |
+| Heat Sink           | 789654           | Standard Heat Sink                 | $1.00 |
+| Heat Shrink Tubing  | 963147           | Assorted Heat Shrink Tubing       | $0.25 |
+| Connectors          | 159852           | Assorted Connectors                | $0.40 |
+| Total Cost          |                  |                                   | **$9.28** |
