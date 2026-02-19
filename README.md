@@ -1,12 +1,15 @@
-System Architecture (Based on Your Diagram)
+# ESP32 Expansion Board – Vendo Machine
 
-Suggested GPIO Mapping (Based on Your Diagram)
+## System Architecture
 
-Example clean assignment:
+![ESP32 Expansion Board Diagram](esp32_expansion_board.svg)
 
-Function	GPIO
-Coin input	GPIO27
-Output control	GPIO23
-I2C SDA	GPIO21
-I2C SCL	GPIO22
-System LED	GPIO2
+## GPIO Mapping
+
+| Function       | GPIO   |
+|----------------|--------|
+| Coin input     | GPIO27 |
+| Output control | GPIO23 |
+| I2C SDA        | GPIO21 |
+| I2C SCL        | GPIO22 |
+| System LED     | GPIO2  |
