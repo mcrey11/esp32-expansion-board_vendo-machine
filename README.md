@@ -1,12 +1,12 @@
-System Architecture (Based on Your Diagram)
+System Architecture (Based on Diagram)
 
-Suggested GPIO Mapping (Based on Your Diagram)
+the system includes:
+12V SMPS (3A)
+LM2596 buck → 5V
+ESP32 Dev Module
+Universal coin slot (12V type)
+Optional LCD I2C
+Status LEDs
 
-Example clean assignment:
+Output switching device (currently relay → you want optocoupler)
 
-Function	GPIO
-Coin input	GPIO27
-Output control	GPIO23
-I2C SDA	GPIO21
-I2C SCL	GPIO22
-System LED	GPIO2
